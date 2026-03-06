@@ -20,16 +20,16 @@ jobs:
         run: pip install uv
 
       - name: Install dependencies
-        run: uv pip install -r requirements.txt
+        run: uv sync
 
       - name: Install ruff and mypy
         run: uv pip install ruff mypy pytest
 
       - name: Ruff format
-        run: ruff format --check .
+        run: uv ruff format --check 
 
       - name: Ruff linter
-        run: ruff check .
+        run: uv ruff check .
 
       - name: Mypy
         run: mypy .
