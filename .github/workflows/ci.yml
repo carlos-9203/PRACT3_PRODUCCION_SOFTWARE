@@ -26,10 +26,10 @@ jobs:
         run: uv pip install ruff mypy pytest
 
       - name: Ruff format
-        run: uv ruff format --check 
+        run: uv run ruff format --check 
 
       - name: Ruff linter
-        run: uv ruff check .
+        run: uv run ruff check .
 
       - name: Mypy
         run: mypy .
