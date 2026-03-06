@@ -1,8 +1,8 @@
-from core.domain_error import EmptyTitleError, InvalidAmountError, InvalidExpenseDateError
 from dataclasses import dataclass
 from datetime import date
 
 from core.domain_error import (
+    EmptyTitleError,
     InvalidAmountError,
     InvalidExpenseDateError,
 )
